@@ -1,4 +1,13 @@
+import type { CSSProperties, ReactNode } from "react";
 import { DEMO_URL } from "@/lib/urls";
+
+const heroMotionImages = [
+  "/A%20premium%20tech-forward%20visual%20showing%20tax%20and%20filing%20research%20through%20intelligent%20knowledge%20systems%2C%20structured%20financial%20records%2C%20connected%20advisory%20workflows%2C%20and%20organized%20digital%20analysis%20in%20a%20(2).png",
+  "/A%20premium%20tech-forward%20visual%20showing%20tax%20and%20filing%20research%20through%20intelligent%20knowledge%20systems%2C%20structured%20financial%20records%2C%20connected%20advisory%20workflows%2C%20and%20organized%20digital%20analysis%20in%20a%20(6).png",
+  "/A%20premium%20tech-forward%20visual%20showing%20tax%20and%20filing%20research%20through%20intelligent%20knowledge%20systems%2C%20structured%20financial%20records%2C%20connected%20advisory%20workflows%2C%20and%20organized%20digital%20analysis%20in%20a%20(7).png",
+  "/A%20premium%20tech-forward%20visual%20showing%20tax%20and%20filing%20research%20through%20intelligent%20knowledge%20systems%2C%20structured%20financial%20records%2C%20connected%20advisory%20workflows%2C%20and%20organized%20digital%20analysis%20in%20a%20(8).png",
+  "/A%20premium%20tech-forward%20visual%20showing%20tax%20and%20filing%20research%20through%20intelligent%20knowledge%20systems%2C%20structured%20financial%20records%2C%20connected%20advisory%20workflows%2C%20and%20organized%20digital%20analysis%20in%20a%20(10).png",
+] as const;
 
 export function Hero() {
   return (
@@ -8,19 +17,21 @@ export function Hero() {
     >
       {/* Background media */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <video
-          className="h-full w-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          poster="/hero-poster.jpg"
-          aria-hidden="true"
-        >
-          <source src="/hero-bg.mp4" type="video/mp4" />
-          <source src="/hero-bg.webm" type="video/webm" />
-        </video>
+        <div className="hero-motion-stack absolute inset-0" aria-hidden="true">
+          {heroMotionImages.map((src, index) => (
+            <div
+              key={src}
+              className="hero-motion-frame"
+              style={
+                {
+                  backgroundImage: `url("${src}")`,
+                  animationDelay: `${index * 3.6}s`,
+                } as CSSProperties
+              }
+            />
+          ))}
+        </div>
+        <div className="hero-motion-tint absolute inset-0" aria-hidden="true" />
         <div
           className="hero-grain absolute inset-0 opacity-15 mix-blend-overlay pointer-events-none"
           aria-hidden="true"
@@ -208,7 +219,7 @@ function PreviewCard() {
   );
 }
 
-function Cite({ children }: { children: React.ReactNode }) {
+function Cite({ children }: { children: ReactNode }) {
   return (
     <span className="mx-0.5 inline-block border border-sienna/30 bg-sienna/10 px-1.5 py-0.5 align-middle font-mono text-[0.6875rem] text-sienna">
       {children}
