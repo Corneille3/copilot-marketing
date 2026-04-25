@@ -9,12 +9,12 @@ export function LandingFooter() {
           <div>
             <Link href="/" className="mb-4 flex items-center gap-3 text-lg">
               <span className="inline-grid h-7 w-7 place-items-center border border-ink text-base italic font-display">
-                C
+                K
               </span>
               <span className="font-medium tracking-tight">
-                Compliance
+                Korn
                 <em className="not-italic italic font-display font-normal text-sienna">
-                  IQ
+                  eva
                 </em>
               </span>
             </Link>

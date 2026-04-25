@@ -14,7 +14,7 @@ export function CTASection() {
         </div>
         <div className="lg:col-span-9">
           <h2 className="font-display text-4xl font-light leading-none tracking-[-0.02em] md:text-5xl lg:text-[5rem]">
-            See ComplianceIQ
+            See Korneva
             <br />
             <em className="italic font-normal text-sienna">in action.</em>
           </h2>
