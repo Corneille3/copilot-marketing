@@ -55,7 +55,7 @@ export function Hero() {
           </h1>
 
           <p className="animate-fade-up delay-3 mt-8 max-w-xl text-base leading-relaxed text-bone/85 md:text-lg lg:text-xl">
-            ComplianceIQ is a multi-tenant AI research copilot for accounting,
+            Korneva is a multi-tenant AI research copilot for accounting,
             legal, and regulated firms. Cited answers from authoritative
             sources and your firm&apos;s own documents — no hallucinations, no
             data leaving Canada.
@@ -124,7 +124,7 @@ function PreviewCard() {
           <span className="h-2 w-2 rounded-full bg-rule" />
           <span className="h-2 w-2 rounded-full bg-rule" />
         </div>
-        <span className="ml-2 text-[0.625rem]">copilot.kouamvision.com</span>
+        <span className="ml-2 text-[0.625rem]">korneva.kouamvision.com</span>
       </div>
 
       {/* Body */}

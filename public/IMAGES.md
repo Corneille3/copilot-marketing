@@ -1,4 +1,4 @@
-# ComplianceIQ — Image generation guide
+# Korneva — Image generation guide
 
 Aesthetic: **editorial archive** — *The Gentlewoman / Cereal / Kinfolk* photography energy. Warm, restrained, paper-and-architecture, never tech-y. Connects new AI to centuries of regulatory tradition.
 
@@ -90,7 +90,7 @@ Encoding: see `public/README.md` for ffmpeg commands. Target < 2 MB.
 
 ### 3. `product-preview.png` — Hero foreground card (1400×1000)
 
-**Use a real screenshot of ComplianceIQ if at all possible** — the live product UI is more credible than any generated image.
+**Use a real screenshot of Korneva if at all possible** — the live product UI is more credible than any generated image.
 
 If no real screenshot exists yet, fall back to a placeholder mock made in Figma, not a Midjourney generation. Generated UI screenshots look fake on close inspection (text gibberish, broken layouts) and break trust.
 

@@ -40,10 +40,10 @@ export function ProblemSection() {
           </div>
         </div>
 
-        {/* Good — ComplianceIQ */}
+        {/* Good — Korneva */}
         <div className="flex min-h-[320px] flex-col border border-ink bg-ink p-10 text-bone">
           <div className="mb-6 font-mono text-[0.6875rem] uppercase tracking-[0.2em] text-sienna">
-            — ComplianceIQ
+            — Korneva
           </div>
           <div className="mb-6 border-b border-dashed border-bone/20 pb-6 font-display text-xl italic text-bone">
             What&apos;s the GST/HST threshold for consulting in Ontario?

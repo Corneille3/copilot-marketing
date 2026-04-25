@@ -1,8 +1,8 @@
-# ComplianceIQ Marketing Site
+# Korneva Marketing Site
 
-Standalone Next.js 15 marketing site for **ComplianceIQ** — deployed at `copilot.kouamvision.com`.
+Standalone Next.js 15 marketing site for **Korneva** — deployed at `korneva.kouamvision.com`.
 
-A static product landing page. Independent from the firm site (`kouamvision.com`) and from the working ComplianceIQ app (`app.copilot.kouamvision.com`).
+A static product landing page. Independent from the firm site (`kouamvision.com`) and from the working Korneva app (`app.korneva.kouamvision.com`).
 
 ## Setup
 
@@ -36,7 +36,7 @@ components/landing/
   ParallaxObserver.tsx      ← scroll-based image drift
   LandingNav.tsx            ← scroll-aware (transparent over hero)
   Hero.tsx                  ← video bg + animated preview card with streaming answer
-  ProblemSection.tsx        ← Generic-vs-ComplianceIQ comparison
+  ProblemSection.tsx        ← Generic-vs-Korneva comparison
   HowItWorks.tsx            ← Sticky scroll narrative — 3 SVG layers cross-fade
   ImageSplit.tsx            ← Reusable split-section component
   Splits.tsx                ← SecuritySplit, IsolationSplit, ResidencySplit
@@ -56,9 +56,9 @@ public/
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | `https://copilot.kouamvision.com` | Used for metadata + sitemap |
+| `NEXT_PUBLIC_SITE_URL` | `https://korneva.kouamvision.com` | Used for metadata + sitemap |
 | `NEXT_PUBLIC_DEMO_URL` | `https://kouamvision.com/contact?intent=demo` | Where "Book a demo" CTAs point |
-| `NEXT_PUBLIC_APP_URL` | `https://app.copilot.kouamvision.com` | Where "Sign in" / "Start onboarding" point |
+| `NEXT_PUBLIC_APP_URL` | `https://app.korneva.kouamvision.com` | Where "Sign in" / "Start onboarding" point |
 
 All have sensible defaults — set in Vercel only if you need to override.
 
@@ -91,7 +91,7 @@ All motion respects `prefers-reduced-motion`.
 
 Push to GitHub, import to Vercel, set env vars, deploy. Vercel auto-detects Next.js.
 
-DNS: point `copilot.kouamvision.com` (CNAME → `cname.vercel-dns.com`) at Vercel via Cloudflare DNS.
+DNS: point `korneva.kouamvision.com` (CNAME → `cname.vercel-dns.com`) at Vercel via Cloudflare DNS.
 
 For full deployment + AWS infra setup (for the app subdomain), see the firm site's `INFRASTRUCTURE.md`.
 

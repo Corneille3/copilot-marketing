@@ -45,20 +45,20 @@ export function LandingNav() {
                 : "border-bone text-bone"
             }`}
           >
-            C
+            K
           </span>
           <span
             className={`font-medium tracking-tight transition-colors ${
               onLight ? "text-ink" : "text-bone"
             }`}
           >
-            Compliance
+            Korn
             <em
               className={`not-italic font-display italic font-normal ${
                 onLight ? "text-sienna" : "text-sienna"
               }`}
             >
-              IQ
+              eva
             </em>
           </span>
         </Link>

@@ -24,19 +24,19 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://copilot.kouamvision.com";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://korneva.kouamvision.com";
 
 export const metadata: Metadata = {
-  title: "ComplianceIQ — Grounded AI research for regulated firms",
+  title: "Korneva — Grounded AI research for regulated firms",
   description:
     "A multi-tenant AI compliance research copilot for accounting, legal, and regulated firms in Canada. Cited answers from authoritative sources and your firm's own documents. Canadian-hosted, tenant-isolated.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
-    title: "ComplianceIQ — Grounded AI research for regulated firms",
+    title: "Korneva — Grounded AI research for regulated firms",
     description:
       "A multi-tenant AI compliance research copilot for accounting, legal, and regulated firms in Canada.",
     url: SITE_URL,
-    siteName: "ComplianceIQ",
+    siteName: "Korneva",
     locale: "en_CA",
     type: "website",
     images: ["/og-image.png"],
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "ComplianceIQ",
+  name: "Korneva",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   description:
