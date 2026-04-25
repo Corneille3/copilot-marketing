@@ -6,26 +6,21 @@ export function Hero() {
       id="hero"
       className="relative min-h-screen overflow-hidden bg-ink pb-20 pt-32 text-bone lg:pt-40"
     >
-      {/* Background media (video or gradient placeholder) */}
+      {/* Background media */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        {/*
-          To use a real video, drop hero-bg.mp4 (and hero-bg.webm) in /public, then uncomment:
-
-          <video
-            className="h-full w-full object-cover"
-            autoPlay loop muted playsInline preload="metadata"
-            poster="/hero-poster.jpg"
-            aria-hidden="true"
-          >
-            <source src="/hero-bg.mp4" type="video/mp4" />
-            <source src="/hero-bg.webm" type="video/webm" />
-          </video>
-        */}
-        <div className="hero-poster-bg h-full w-full" aria-hidden="true" />
-        <div
-          className="hero-motion-bg animate-slow-pulse absolute inset-0"
+        <video
+          className="h-full w-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          poster="/hero-poster.jpg"
           aria-hidden="true"
-        />
+        >
+          <source src="/hero-bg.mp4" type="video/mp4" />
+          <source src="/hero-bg.webm" type="video/webm" />
+        </video>
         <div
           className="hero-grain absolute inset-0 opacity-15 mix-blend-overlay pointer-events-none"
           aria-hidden="true"

@@ -7,3 +7,6 @@ out/
 .DS_Store
 .vercel
 next-env.d.ts
+
+# Hero video source (kept locally, do not commit — large binary)
+public/hero-bg.original.*
