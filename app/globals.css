@@ -46,16 +46,16 @@ body {
 }
 
 @keyframes hero-image-drift {
-  0% { transform: scale(1.06) translate3d(-1.5%, -1%, 0); }
-  50% { transform: scale(1.12) translate3d(1%, 1.5%, 0); }
-  100% { transform: scale(1.08) translate3d(2%, -1%, 0); }
+  0% { transform: scale(1.08) translate3d(-3%, -2%, 0); }
+  50% { transform: scale(1.16) translate3d(2%, 2.5%, 0); }
+  100% { transform: scale(1.1) translate3d(3%, -2%, 0); }
 }
 
 @keyframes hero-image-cycle {
   0% { opacity: 0; }
-  8% { opacity: 0.85; }
-  28% { opacity: 0.85; }
-  40% { opacity: 0; }
+  6% { opacity: 0.92; }
+  26% { opacity: 0.92; }
+  38% { opacity: 0; }
   100% { opacity: 0; }
 }
 
@@ -158,6 +158,7 @@ body {
   animation:
     hero-image-cycle 18s linear infinite,
     hero-image-drift 18s ease-in-out infinite;
+  animation-fill-mode: both;
   will-change: opacity, transform;
 }
 .hero-motion-tint {
@@ -229,10 +230,6 @@ body {
     transform: none !important;
   }
   .hero-motion-frame {
-    opacity: 0 !important;
-    transform: none !important;
-  }
-  .hero-motion-frame:first-child {
-    opacity: 0.8 !important;
+    animation-duration: 24s !important, 24s !important;
   }
 }

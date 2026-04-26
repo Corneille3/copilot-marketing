@@ -25,7 +25,7 @@ export function Hero() {
               style={
                 {
                   backgroundImage: `url("${src}")`,
-                  animationDelay: `${index * 3.6}s`,
+                  animationDelay: `-${index * 3.6}s, -${index * 3.6}s`,
                 } as CSSProperties
               }
             />
