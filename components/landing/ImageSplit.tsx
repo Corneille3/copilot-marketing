@@ -7,9 +7,9 @@ export function ImageSplit({
   title,
   body,
   pillars,
-  imageClass,
+  imageSrc,
+  imageAlt,
   imageTag,
-  imageNote,
 }: {
   id?: string;
   reverse?: boolean;
@@ -17,9 +17,9 @@ export function ImageSplit({
   title: ReactNode;
   body: ReactNode;
   pillars: string[];
-  imageClass: string;
+  imageSrc: string;
+  imageAlt: string;
   imageTag: string;
-  imageNote: string;
 }) {
   return (
     <section
@@ -61,18 +61,21 @@ export function ImageSplit({
             }`}
           >
             <div
-              className={`relative aspect-[10/7] w-full overflow-hidden border border-rule bg-cover bg-center will-change-transform ${imageClass}`}
+              className="relative aspect-[10/7] w-full overflow-hidden border border-rule will-change-transform"
               data-parallax-img
               style={{
                 boxShadow:
                   "0 40px 60px -30px rgba(28,27,23,0.25), 0 20px 40px -20px rgba(184,74,46,0.08)",
               }}
             >
+              <img
+                src={imageSrc}
+                alt={imageAlt}
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
               <span className="absolute left-4 top-4 z-[2] bg-bone/90 px-3 py-1.5 font-mono text-[0.625rem] uppercase tracking-[0.15em] text-ink">
                 {imageTag}
-              </span>
-              <span className="absolute bottom-3 right-3 z-[2] bg-ink/60 px-2 py-1 font-mono text-[0.625rem] text-bone/70">
-                {imageNote}
               </span>
             </div>
           </div>
