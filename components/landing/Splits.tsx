@@ -25,9 +25,9 @@ export function SecuritySplit() {
         "MFA enforced",
         "No training on your data",
       ]}
-      imageClass="split-img-security"
+      imageSrc="/security.jpg"
+      imageAlt="An antique brass key resting on a leather-bound ledger book"
       imageTag="Security"
-      imageNote="/public/security.jpg"
     />
   );
 }
@@ -58,9 +58,9 @@ export function IsolationSplit() {
         "Separate S3 prefixes",
         "Audit-per-tenant",
       ]}
-      imageClass="split-img-isolation"
+      imageSrc="/tenant-isolation.jpg"
+      imageAlt="Three identical leather portfolios arranged in a row, each tied with a sienna ribbon"
       imageTag="Isolation"
-      imageNote="/public/tenant-isolation.jpg"
     />
   );
 }
@@ -90,9 +90,9 @@ export function ResidencySplit() {
         "PIPEDA-aligned",
         "SOC 2 track",
       ]}
-      imageClass="split-img-residency"
+      imageSrc="/canadian-residency.jpg"
+      imageAlt="A vintage globe with a single illuminated region on a worn wooden desk"
       imageTag="Residency"
-      imageNote="/public/canadian-residency.jpg"
     />
   );
 }
