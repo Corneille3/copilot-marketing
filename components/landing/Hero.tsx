@@ -43,11 +43,16 @@ export function Hero() {
             <span>Grounded AI · Canadian-hosted</span>
           </div>
 
-          <h1 className="animate-fade-up delay-2 mt-6 font-display text-[2.5rem] font-light leading-none tracking-[-0.02em] text-bone md:text-6xl lg:text-[5.75rem]">
-            Compliance research,
+          <h1 className="mt-6 font-display text-[2.5rem] font-light leading-none tracking-[-0.02em] text-bone md:text-6xl lg:text-[5.75rem]">
+            <span className="animate-answer-word" style={{ animationDelay: "0.3s" }}>Compliance</span>
+            {" "}
+            <span className="animate-answer-word" style={{ animationDelay: "0.45s" }}>research,</span>
             <br />
-            answered with{" "}
-            <em className="italic font-normal text-sienna">evidence.</em>
+            <span className="animate-answer-word" style={{ animationDelay: "0.6s" }}>answered</span>
+            {" "}
+            <span className="animate-answer-word" style={{ animationDelay: "0.75s" }}>with</span>
+            {" "}
+            <em className="animate-answer-word italic font-normal text-sienna" style={{ animationDelay: "0.9s" }}>evidence.</em>
           </h1>
 
           <p className="animate-fade-up delay-3 mt-8 max-w-xl text-base leading-relaxed text-bone/85 md:text-lg lg:text-xl">
