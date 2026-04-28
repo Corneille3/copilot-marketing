@@ -31,7 +31,7 @@ export function SectionHead({
   eyebrowColor?: string;
 }) {
   return (
-    <div className="mb-16 grid gap-6 lg:grid-cols-12 lg:items-end">
+    <div className="reveal mb-16 grid gap-6 lg:grid-cols-12 lg:items-end">
       <div className="lg:col-span-3">
         <p
           className={`font-mono text-[0.6875rem] uppercase tracking-[0.2em] ${eyebrowColor}`}

@@ -77,7 +77,7 @@ export function HowItWorks() {
               ref={(el) => {
                 stepRefs.current[idx] = el;
               }}
-              className="flex min-h-[20rem] flex-col justify-center"
+              className="reveal flex min-h-[20rem] flex-col justify-center"
             >
               <span className="mb-4 font-display text-6xl font-normal italic leading-none text-sienna">
                 {step.n}
